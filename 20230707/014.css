@@ -1,0 +1,12 @@
+body{background-color: skyblue;}
+h1,h2,p{
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;;
+font padding: 0;
+margin:0;
+font-weight: normal;}
+button:enabled{cursor:pointer;}
+img {
+    vertical-align:top;
+}
