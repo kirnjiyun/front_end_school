@@ -1,0 +1,51 @@
+ .bigbox {
+     display: flex;
+     width: 350px;
+     height: 140px;
+     border-radius: 5px;
+     border: 1px solid #DBDBDB;
+     font-size: 16px;
+     background-color: rgb(255, 255, 255);
+     flex-wrap: wrap;
+     align-content: center;
+ }
+
+ .welcomeweniv {
+     border-top: 19px;
+     border-left: 16px;
+ }
+
+ .loginbutton,
+ .lock,
+ .signup {
+     font-size: 12px;
+     align-items: center;
+     flex-wrap: wrap;
+     align-content: center;
+ }
+
+ .loginbutton {
+     width: 318px;
+     height: 40px;
+     border-radius: 4px;
+     background-color: #711cff;
+     color: white;
+
+ }
+
+ .lock,
+ .signup {
+     align-items: center;
+     margin-top: 8px;
+
+ }
+
+ .lock {
+     border-top: 107px;
+     border-left: 36px;
+ }
+
+ .signup {
+     margin-top: 107px;
+     margin-left: 289px;
+ }
