@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid실습</title>
+    <style>
+        body{display: grid;
+            grid-template-areas: 
+            "b b b y y"
+            "b b b y y "
+            "p p o y y "
+            "s s g g g "
+            "s s g g g ";
+            width:300px;
+            height:300px;
+        gap:5px;}
+        .blue{grid-area:b;
+          background-color: blue;}
+        .yellow{background-color: yellow;
+          grid-area:y;}
+        .purple{background-color: purple;
+          grid-area:p;}
+        .orange{background-color: orange;
+          grid-area:o;}
+        .salmon{background-color: salmon;
+          grid-area:s;}
+        .green{background-color: green;
+          grid-area:g;}
+        
+    
+    </style>
+  </head>
+  <body>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="purple"></div>
+    <div class="orange"></div>
+    <div class="salmon"></div>
+    <div class="green"></div>
+    
+
+  </body>
+</html>

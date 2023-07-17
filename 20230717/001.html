@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+    .container{
+	    display:grid;
+	    width:300px;
+	  
+	    grid-template-columns:3fr 2fr 1fr;
+	    grid-template-rows: minmax(100px,400px) minmax(50px,100px);
+        gap: 20px 10px;
+    }
+        .item{
+            background-color: skyblue;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="item">A Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nulla quidem odit eaque quam aliquam vero rem atque recusandae officia! Veniam alias fugit magnam explicabo similique harum consequuntur, amet nam.</div>
+        <div class="item">B Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione quia possimus itaque! Maiores, similique cum vitae nostrum quisquam facilis earum soluta quod iusto architecto numquam labore magni, rerum voluptates!</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+
+
+    </div>
+
+  </body>
+</html>
