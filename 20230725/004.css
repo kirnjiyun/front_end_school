@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding:0;
+    }
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+button:enabled {cursor: pointer;}
+
+/* ************************** */
+.main{
+    width: 520px;
+    min-height: 712px;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signinup{
+    position: relative;
+    height: 58px;
+    width:520px;
+    border-bottom:1px solid #C4C4C4;
+    color: #000;
+    }
+.signinup2{
+    display: inline-block;
+    position:absolute;
+    transform: translate(188px,18px);
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.close{
+    position: absolute;
+    /* background-color: black; */
+    transform: translate(480px,18px);
+}
+
+.middle{
+    display:flex;
+flex-direction: column;}
+.solve{
+    
+    margin-top: 26px;
+    margin-bottom: 24px;
+    color: #000;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+input{padding-left: 16px;}
+
+.id:focus-visible,.pw:focus-visible{
+    border-radius: 5px;
+    outline:2px solid #F4492E;
+
+}
+
+/* .texthide{
+    overflow: hidden;
+    width:1px;
+    height: 1px;
+    clip-path:inset(50%);
+
+} */
+.labelhold{
+    position:relative;
+    color: #767676;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.labelhold::before{
+    display:inline-block;
+    content:'';
+    width:22px;
+    height:22px;
+    /* border: 1px solid black; */
+    margin-right: 8px;
+    vertical-align: -5px;
+    background-image: url(./images/check-box.svg);
+}
+
+.labelhold::after{
+    display:inline-block;
+    content:'';
+    width:22px;
+    height:22px;
+    margin-left: -140px;
+    vertical-align: -5px;
+    background:url(./images/check-box\ -blue.svg) 0 0/22px no-repeat;
+    opacity:0;
+
+
+}
+.inputhold:checked+
+.labelhold::after{
+    opacity:1;}
+
+.minisigninup{
+    color:  #767676;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.minisigninup>span{margin: 12px;}
+
+
+
+
+
+
+
+.down{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input,.login,.lgbtn{
+    width: 472px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    background-color: white;
+    margin-bottom: 10px;
+    color: #767676;
+}
+.login{border-radius: 5px;
+    background: #2F80ED;
+    color: #FFF;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 21px;
+margin-bottom: 20px;}
+
+
+.gg{
+    background-image: url(./images/Google__G__Logo\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    border: 1px solid #767676;
+
+}
+.fb{
+    background-image: url(./images/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    border: 1px solid #2D9CDB;
+
+
+}
+.nv{
+    background-image: url(./images/naver-logo.png);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    border: 1px solid #00BF18;
+
+
+}
+.ko{
+    background-image: url(./images/message-circle.png);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    border: 1px solid #F2C94C;
+
+
+}
+
+
+
+
+.or{position:relative;
+    text-align: center;
+    color: #767676;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom:20px;
+    
+}
+.line1,.line2{
+    width:210px;
+    border-top:1px solid #C4C4C4;
+    position:absolute;
+    transform: translatey(8px);
+    }
+.line1{left:10px;}
+.line2{right:10px;}

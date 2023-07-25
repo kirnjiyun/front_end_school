@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom checkbox</title>
+    <style>
+        .texthide{
+            overflow: hidden;
+            width:1px;
+            height: 1px;
+            clip-path:inset(50%);
+        
+        }
+        .labelhold{
+            position:relative;
+        }
+        .labelhold::before{
+            display:inline-block;
+            content:'';
+            width:22px;
+            height:22px;
+            margin-right: 10px;
+            border:1px solid black;
+            vertical-align: -5px;
+
+        }
+        .inputhold:focus-visible+.labelhold::before{
+            outline: 2px solid teal;
+            outline-offset: 2px;
+        }
+
+
+
+
+
+
+        .labelhold::after{
+            content:'';
+            position: absolute;
+            top:-3px;
+            left:20px;
+            width:22px;
+            height:22px;
+            /* background-image:url(./images/checkmark.png);
+            background-size: 22px;
+            background-repeat: no-repeat; */
+            background:url(./images/checkmark.png) 0 0/22px no-repeat;
+            opacity:0;
+            transition: all 0.3s ease;
+
+
+        }
+        .inputhold:checked+.labelhold::after{
+            left:0;
+            opacity:1;
+
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="inputhold" class="inputhold texthide">
+    <label for="inputhold" class="labelhold">로그인 상태 유지</label>
+
+
+
+  </body>
+</html>
