@@ -1,0 +1,1 @@
+document.write('안녕하세요 이건 js로 쓴 내용입니다!')
