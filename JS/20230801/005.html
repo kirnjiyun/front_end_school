@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        // type of console
+        console.clear()// console 청소
+        console.dir() //가지고 있는 요소를 보여줌
+        console.log()// 콘솔창에 출력
+        let data={a:1,b:2,c:3}
+        console.table(data)
+        console.group('one')
+        console.log('안녕/팀원')
+        console.log('안녕1/팀원')
+        console.log('안녕2/팀원')
+        console.group('two')
+        console.log('안녕3/팀원')
+        console.log('안녕4/팀원')
+        console.groupEnd()
+        console.log('안녕/팀장')
+        console.groupEnd()
+        console.log('End')
+//디버깅: 버그를 잡는 것
+console.group('one')
+        for (let i = 0; i < 3; i++) {
+            console.log(i)
+            console.group('two')
+            for (let j = 0; j < 10; j++) {
+                console.log(j)
+            }
+            console.groupEnd()
+        }
+        console.groupEnd()
+        
+    </script>
+  </body>
+</html>

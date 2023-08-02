@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        //문자열은 작은따옴표('')나 큰따옴표(""), 빽틱(`)으로 둘러싼 일련의 문자를 가르킵니다.
+        //줄바꿈 두 종류가 있음 첫번째는
+        let s ='hello\nworld'
+        console.log(s)
+
+        let y=`hello
+world`
+console.log(y)
+let age =10
+console.log('홍길동의 나이는 '+age+'살입니다.')
+console.log(`홍길동의 나이는 ${2*age}살입니다.`)
+
+//순서출력
+let name = '홍길동'
+console.log(name[3])
+// 자바 스크립트에서는 문자열의 순서를 넘어갔을 때 에러가 발생하지 않고 undefined 를 출력한다.
+//문자열의 사칙연산
+console.log('1'+2+3)//다른 언어에서는 error
+console.log(2+3+'1')//다른 언어에서는 error
+console.log(2+3 + +'1') //다른 언어에서는 error
+//형변환
+console.log('1'+'1')//11이 아니고 2가 출력되게 하려면?
+console.log(parseInt('1')+parseInt('1')
+console.log(parseInt(undefined))
+console.log(1+1)//2가 아니라 11이 출력되게 할 수 있을까요?
+let x = 10
+console.log(x.toString()+x.toString())
+
+
+    </script>
+
+  </body>
+</html>
