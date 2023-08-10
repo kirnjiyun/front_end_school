@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 번호 만들기</title>
+</head>
+<body>
+    <script>
+let arr = [];
+while (arr.length < 6) {
+    const result = parseInt(Math.random() * 45 + 1);
+
+    if (!arr.includes(result)) {
+        arr.push(result);
+    }
+}
+
+console.log(arr);
+
+
+        
+    </script>
+</body>
+</html>

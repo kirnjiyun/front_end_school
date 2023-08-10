@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort 문자열 숫자열</title>
+  </head>
+  <body>
+    
+    <script>
+        const avengers=['spiderman','ironman','thor','doctorstrange']
+        avengers.sort()
+        // avengers.sort(function(a,b){
+        //     if(a<b){return -1;}
+        //     else if (b<a){return 1;}
+        //     else{return 0;}
+        // });
+        const numbers=[1,6,8,3,43,76,235,70,48,32]
+        numbers.sort(function(a,b){return a - b;})
+    </script>
+  </body>
+</html>

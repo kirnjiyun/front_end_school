@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <script>
+//         const menu = [
+//             { name: "아메리카노", price: 2000 },
+//             { name: "카페라떼", price: 2500 },
+//             { name: "카페모카", price: 2800 },
+//             { name: "핫초코", price: 3000 },
+//             { name: "과일주스", price: 3500 },
+//         ];
+// 사용자가 입력한 메뉴 번호에 따라 해당하는 메뉴 이름과 가격을 출력합니다. 만약 종료 번호를 누르면 ‘종료합니다’ 를 콘솔에 출력합니다.
+const n = prompt('메뉴 번호를 입력해주세요');
+const menu = [
+    { name: "아메리카노", price: 2000 },
+    { name: "카페라떼", price: 2500 },
+    { name: "카페모카", price: 2800 },
+    { name: "핫초코", price: 3000 },
+    { name: "과일주스", price: 3500 },
+];
+
+switch (n) {
+    case '종료':
+        console.log('종료합니다');
+        break;
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+    case '5':
+        const selectedMenu = menu[parseInt(n) - 1];
+        console.log(`${selectedMenu.name}을(를) 선택하셨습니다. 가격은 ${selectedMenu.price}원입니다.`);
+        break;
+    default:
+        console.log('유효한 메뉴 번호를 입력해주세요.');
+        break;
+}
+
+
+    </script>
+  </body>
+</html>
