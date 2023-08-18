@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    text-align: center;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<button id="colorButton">색상 변경</button>
+
+<script>
+// 버튼 요소를 가져옵니다.
+const colorButton = document.getElementById("colorButton");
+
+// 클릭 이벤트 리스너를 추가합니다.
+colorButton.addEventListener("click", changeColor);
+
+// 색상 변경 함수
+function changeColor() {
+  // 무작위 RGB 색상 생성
+  const randomColor = getRandomColor();
+  
+  // body의 배경 색상 변경
+  document.body.style.backgroundColor = randomColor;
+}
+
+// 무작위 RGB 색상을 생성하는 함수
+function getRandomColor() {
+  const r = Math.floor(Math.random() * 256); // 0에서 255 사이의 무작위 값
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r},${g},${b})`;
+}
+</script>
+
+</body>
+</html>

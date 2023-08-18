@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      div {
+        width: 400px;
+        height: 400px;
+        background-color: rgb(84, 84, 84);
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <ul>
+      <li><button class="red box">빨강</button></li>
+      <li><button class="yellow box">노랑</button></li>
+      <li><button class="green box">초록</button></li>
+    </ul>
+    <script>
+      const div = document.querySelector("div");
+      const redButtons = document.getElementsByClassName("red");
+      const yellowButtons = document.getElementsByClassName("yellow");
+      const greenButtons = document.getElementsByClassName("green");
+
+      for (const redButton of redButtons) {
+        redButton.addEventListener("click", function () {
+          div.style.backgroundColor = "red";
+        });
+      }
+
+      for (const yellowButton of yellowButtons) {
+        yellowButton.addEventListener("click", function () {
+          div.style.backgroundColor = "yellow";
+        });
+      }
+
+      for (const greenButton of greenButtons) {
+        greenButton.addEventListener("click", function () {
+          div.style.backgroundColor = "green";
+        });
+      }
+    </script>
+  </body>
+</html>

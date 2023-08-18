@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        const json = '{"result":true, "count":42}';
+const obj = JSON.parse(json);
+console.log(obj);
+
+const json = '[1, 2, 3]';
+const obj = JSON.parse(json);
+console.log(obj);
+
+const json = '[1, 2, [1, 2, 3]]';
+const obj = JSON.parse(json);
+console.log(obj);
+
+
+const obj = { "result": true, "count": 42 }
+const json = JSON.stringify(obj);
+
+
+let l = [10, 20, 30];
+let a = JSON.parse(JSON.stringify(l));
+a[0] = 1000;
+
+console.log(l);
+
+
+
+
+    </script>
+
+  </body>
+</html>
