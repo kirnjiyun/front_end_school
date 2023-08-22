@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        let myArr = new Array(1,2,3);
+let myArr2 = new Array(4,5,6);
+
+myArr2.length
+myArr.length
+//생성자 함수의 this 는 생성자를 통해 만들어진 인스턴스를 참조한다.
+function Factory(name){
+    this.myname = name;
+    //robot1_1.myname = 'JH';
+}
+this.sayYourName=function(){
+    console.log('삐비비 제이름은 '+this.myname+'입니다...!!!!!!')
+}
+const robot1_1 = new Factory('JH')
+
+    </script>
+
+  </body>
+</html>

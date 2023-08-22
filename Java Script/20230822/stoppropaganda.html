@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="https://www.naver.com" class="link">네이버 링크입니다만..</a>
+    <form action="">
+        <button type="submit" class="submit">submit</button>
+    </form>
+    <script>
+        const btn=document.querySelector('button')
+        btn.addEventListener('click',(event)=>{
+            event.preventDefault();
+            console.log('submit')
+            event.stopPropagation()
+        })
+        //캡쳐링 이벤트로 만들면 버블링 이벤트에서 전파를 막아도 소용 없다!
+        document.body.addEventListener('click',() => {console.log('event still alive!!')},true)
+
+    </script>
+</body>
+
+</html>

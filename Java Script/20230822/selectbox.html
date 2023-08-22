@@ -116,11 +116,11 @@
     <div class="custom-select">
         <button class="btn-select">최애 프로그래밍 언어</button>
         <ul class="list">
-            <li><button type="button">Python</button></li>
+            <!-- <li><button type="button">Python</button></li>
             <li><button type="button">Java</button></li>
             <li><button type="button">JavaScript</button></li>
             <li><button type="button">C#</button></li>
-            <li><button type="button">C/C++</button></li>
+            <li><button type="button">C/C++</button></li> -->
         </ul>
     </div>
 </body>
@@ -132,14 +132,41 @@
 
     })
     //2. 목록의 버튼을 누르면 버튼의 텍스트가 첫번째 버튼에 반영되어야 한다.
-    const btns = document.querySelectorAll('li button')
-    btns.forEach((itemBtn)=>itemBtn.addEventListener('click',function(){btn.textContent= itemBtn.textContent;
-            //3. 선택한 후에 리스트가 삭제되어야함
-        btn.classList.remove('on');
-    }))
+
+
+    // const btns = document.querySelectorAll('li button')
+    // btns.forEach((itemBtn)=>itemBtn.addEventListener('click',function(){btn.textContent= itemBtn.textContent;
+    //         //3. 선택한 후에 리스트가 삭제되어야함
+    //     btn.classList.remove('on');
+    // }))
+
+
     //li 동적으로 생성
-    
+    //old-fashioned
+    // const arrayLanguage=['Python','Java','Java Script','C#','C/C++'];
+    // arrayLanguage.forEach((item)=>{
+    //     const li =  document.createElement('li');
+    //     const btn = document.createElement('button');
+    //     const list = document.querySelector('.list')
+    //     btn.setAttribute('type','button');
+    //     btn.textContent = item;
+    //     list.appendChild(li);appendChild(btn);
+
+    // })
+        const arrayLanguage=['Python','Java','Java Script','C#','C/C++'];
+        const list = document.querySelector('.list')
+    arrayLanguage.forEach((item)=>{
+        const li =  document.createElement('li');
+        li.innerHTML=`<button type='button'>${item}</button>`
+        list.appendChild(li)
+    })
     //이벤트를 이벤트 위임을 통해 구현해주세요
+    list.addEventListener('click',(event)=>{
+    if (event.target.nodeName ==="BUTTON"){
+        btn.textContent=event.target.textContent;
+        btn.classList.remove('on');
+    }
+})
 
 
 </script>

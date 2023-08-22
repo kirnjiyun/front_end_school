@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>robot</title>
+  </head>
+  <body>
+    <script>
+//음식 배열 전달하면 배열 안에서 랜덤하게 메뉴를 뽑아내는 로봇 객체의 생성자를 만들어보세요
+function RobotFactory(foodNames) {
+            this.menu = foodNames;
+            this.sayMenu = function () {
+                const index = parseInt(Math.random() * this.menu.length);
+                console.log(`삐리비리비리 오늘의 메뉴는! ${this.menu[index]}`);
+            }
+        }
+
+const robot = RobotFactory(['새우타코','연어 포케','감자튀김피자', '부추삼겹살','육회비빔밥','연어초밥','부타동','항정살김치볶음밥']);
+    </script>
+
+  </body>
+</html>
