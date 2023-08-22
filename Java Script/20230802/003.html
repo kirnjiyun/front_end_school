@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단항 증감 비교 연산자</title>
+  </head>
+  <body>
+    <script>
+console.log("더하기연산 : ", 2 + 2.5 );
+console.log("빼기연산 : ", 5 - 7 );
+console.log("곱하기연산 : ", 3 * 2 );
+console.log("나누기연산 : ", 2 / 2 );
+console.log("나머지연산 : ", 3 % 2 );
+console.log("거듭제곱연산 : ", (2 ** 3) ** 2  );
+console.log("단항연산 : ", -(2)  ); 
+console.log("단항연산 : ", -(-4)  );
+console.log("단항연산 : ", +(4)  );
+
+let num = 1; // 증감연산자는 할당연산자를 통해 할당된 값에만 사용 가능합니다.
+console.log("증감연산 : ", ++num  );
+let num1=1
+console.log("증감연산 : ", num1++  );
+let num2=3
+console.log("증감연산 : ", --num2  );
+let num3=3
+console.log("증감연산 : ", num--  );
+
+console.log("비교연산 : ", 2 > 3  );//False
+console.log("비교연산 : ", 2 < 3  );
+// console.log("비교연산 : ", 2 => 3  );
+// console.log("비교연산 : ", 2 =< 3  );
+console.log("비교연산 : ", 2 == 3  ); //False
+console.log("비교연산 : ", 2 === 3  );//실무에서는 등호 3개를 권함
+console.log(:"비교연산 :",2=='2')//다른 언어에서는 false, js 에서는 true
+console.log("비교연산 : ", 2 === '2'); // 다른 언어에서 이런 문법이 없고, js에서는 false
+
+    </script>
+
+  </body>
+</html>

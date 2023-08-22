@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        // 비추
+        let answer = 0
+        let inputValue =1234
+        
+        inputValue=''+ inputValue 
+        answer+= +inputValue[0]
+        answer+= +inputValue[1]
+        answer+= +inputValue[2]
+        answer+= +inputValue[3]
+        answer
+
+
+
+
+
+        ///2번째 풀이가 좋음
+        let answer = 0
+        let inputValue=1234
+
+        inputValue = inputValue.toString()
+        answer += parseInt(inputvalue[0])
+        answer += parseInt(inputvalue[1])
+        answer += parseInt(inputvalue[2])
+        answer += parseInt(inputvalue[3])
+        /// 4번째 풀이(안배운 reduce 사용!)
+let inputValue = 12341234
+
+inputValue.toString().split('').reduce((a, c)=> a + parseInt(c), 0)
+
+</script>
+</body>
+</html>
