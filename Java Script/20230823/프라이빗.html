@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        class Robot {
+          
+          constructor(name) {
+              this.name = name;
+          }
+      
+          sayYourName() {
+              console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
+          }
+      }
+      
+      const bot = new Robot('smith');
+      
+      bot.name // smith
+
+      class Robot {
+    #password
+
+    constructor(name, pw) {
+        this.name = name;
+        this.#password = pw;
+    }
+
+
+    sayYourName() {
+        console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
+    }
+
+    getPassword() {
+        return this.#password
+    }
+
+    setPassword(pw) {
+        this.#password = pw;
+    }
+}
+
+class robot{
+    #important
+    constructor(name,info){
+        this.name = name;
+        this.#important=info;
+    }
+    sayYourName(){console.log(`삐리비리. 제 이름은 ${this.name}입니다.`)}
+}
+    const robot = new Robot{'지윤','qwerty1234'}
+    console.log(robot.#important)
+    robot.#important = '5453123'
+    //error 나오는게 정상인데 크롬 콘솔창은 좀 특별해서 error안남
+
+    get password(){
+        return this.#password
+    }
+    set password(pw){
+        this.#password = pw
+    }
+    const robot2= new Robot2('지윤',123123);
+    console.log(robot2.password);
+    robot2.password = 456789;
+
+    password
+    </script>
+
+  </body>
+</html>
