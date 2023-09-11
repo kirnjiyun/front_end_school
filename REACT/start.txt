@@ -1,0 +1,2 @@
+(base) mac@Macs-MacBook-Air front_end_school-1 % cd REACT/20230911
+(base) mac@Macs-MacBook-Air 20230911 % npx create-react-app componentlist --template basic-react
