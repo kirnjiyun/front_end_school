@@ -7,12 +7,15 @@ import Modal from "./components/modal/Modal";
 
 
 function App() {
+
+const [modalShow,setModalShow] = useState(false);
+  
   return (
     <div id="app">
       <Header/>
-      <Main/>
+      <Main setModalShow={setModalShow}/>
       <Footer/>
-      <Modal/>
+      {modalShow && <Modal setModalShow={setModalShow}/>}
       
     </div>
   );
