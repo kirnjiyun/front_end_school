@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <div id="wrapper">
+        <form>
+          <label><input type="text" id="startMin" />분</label> // 분 입력 창 
+          <label><input type="text" id="startSec" />초</label> // 초 입력 창 
+          <input
+            type="button"
+            value="START"
+            class="start-btn"
+            onclick="startTimer()" // 타이머 시작 함수 
+          />
+          <input
+            type="button"
+            value="RESET"
+            class="reset-btn"
+            onclick="resetTimer()" // 타이머 리셋 함수 
+          />
+        </form>
+        <hr />
+        <div id="display" class="remaining"></div> // 진행되는 타이머 시간을 보여주는 곳 
+      </div>
+        <script src="js/timer.js"></script> // js 파일 연결
+
+  </body>
+</html>
