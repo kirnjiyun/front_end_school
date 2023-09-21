@@ -21,23 +21,30 @@
             <ul class="time-box">
 
                 <li class="hours">hrs
-                    <img src="./img/box.png" alt="">
+                    
+                    <label for="hours"></label>
+                    <input id="myNumberInput" type="number" id="hours" name="inputHours" min="0" max="24" step="1">
+                    
                 </li>
                 <li class="dot1"><img src="./img/dot.png" alt=""></li>
 
                 <li class="minutes">min
                     <img src="./img/box.png" alt="">
+                    <label for="minutes">Label Text</label>
+                    <input type="number" id="minutes" name="inputMinutes" min="0" max="60" step="1">
                 </li>
 
                 <li class="dot2"><img src="./img/dot.png" alt=""></li>
 
                 <li class="seconds">sec
                     <img src="./img/box.png" alt="">
+                    <label for="seconds">Label Text</label>
+                    <input type="number" id="seconds" name="inputSeconds" min="0" max="60" step="1">
                 </li>
 
             </ul>
 
-            <div class="buttonss">
+            <div class="buttons">
                 <button class="button-start" onclick="startTimer()">
                     
                 </button>

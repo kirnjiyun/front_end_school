@@ -136,6 +136,12 @@ main{
 .hours{
     display: flex;
     flex-direction: column;}
+.hours>input{
+    background-image: url(../img/box.png);
+    width:80px;
+    height:80px;
+    border-radius: 5px;
+}
 
 .minutes{
     display: flex;

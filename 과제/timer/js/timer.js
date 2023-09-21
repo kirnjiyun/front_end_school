@@ -35,13 +35,20 @@ for (let i = 0; i < changeButtons2.length; i++) {
 
 
 
-// let min, sec;
-// let timer;
 
-// function startTimer() {
-//     min = document.querySelector("#startMin").value; 
-//     if (min === "") min = 0;
-//     sec = document.querySelector("#startSec").value;
-//     if (sec === "") sec = 0;
-//     timer = setInterval(countTimer, 1000);
-//   }
+let min, sec;
+let timer;
+
+function startTimer() {
+    min = document.querySelector("#startMin").value; 
+    if (min === "") min = 0;
+    sec = document.querySelector("#startSec").value;
+    if (sec === "") sec = 0;
+    timer = setInterval(countTimer, 1000);
+}
+
+// if(".button-start"){return ".button-reset"}
+
+let numberInput = document.getElementById("myNumberInput");
+    numberInput.style.color = "white";
+    numberInput.style.font-size ="24px"
