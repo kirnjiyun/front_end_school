@@ -48,7 +48,13 @@ function startTimer() {
 }
 
 // if(".button-start"){return ".button-reset"}
-
-let numberInput = document.getElementById("myNumberInput");
+for (let i = 1; i <= 3; i++) {
+    let numberInput = document.getElementById("myNumberInput" + i);
     numberInput.style.color = "white";
-    numberInput.style.font-size ="24px"
+    numberInput.style.fontSize = "32px";
+}
+
+
+// const backgroundImageUrl = '../img/box.png';
+// numberInput.style.backgroundImage = `url('${backgroundImageUrl}')`;
+
